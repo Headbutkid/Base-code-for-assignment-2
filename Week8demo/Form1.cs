@@ -15,11 +15,14 @@ namespace Week8demo
                 string Email;
                 double fee;
                 double membershipfee;
+                string addy;
+                string Moblie;
 
                 // Get Data from text box;
                 Fname = FnametextBox.Text;
                 Email = EmailtextBox.Text;
-
+                addy = textBoxaddy.Text;
+                Moblie = textBoxMoblie.Text;
                 // get Type of membership
 
                 bool ThreeMonth = radioButtonmo3.Checked;
@@ -40,6 +43,10 @@ namespace Week8demo
                 MessageBox.Show($"Membership: {Membership} nzd");
 
                 PrintInvoice.WriteInvoice(Fname, Email, Membership);
+
+
+                //Extras fees
+                string extras = Convert.ToString();
 
             }
         }
