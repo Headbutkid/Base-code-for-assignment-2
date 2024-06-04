@@ -45,9 +45,18 @@ namespace Week8demo
                 PrintInvoice.WriteInvoice(Fname, Email, Membership);
 
 
-                //Extras fees
-                string extras = Convert.ToString();
 
+               
+                //Extras fees
+                //string extras = Convert.ToString();
+
+                //get extra type 
+                bool Twentyfour = radioButtonAccess.Checked;
+                bool Personal = radioButtonPT.Checked;
+                bool Diet = radioButtonDC.Checked;
+                bool ON = radioButtonOFV.Checked;
+
+                double Ex = Extra.extralogic(Fee);
             }
         }
     }
