@@ -17,15 +17,15 @@ namespace Week8demo
             {
                 if (Bas)
                 {
-                    fee = 36 * 10.00;
+                    fee = 12 * 10.00;
                 }
                 else if (Reg)
                 {
-                    fee = 36 * 15.00;
+                    fee = 12 * 15.00;
                 }
                 else
                 {
-                    fee = 36 * 20.00;
+                    fee = 12 * 20.00;
                 }
 
             }
@@ -46,15 +46,16 @@ namespace Week8demo
             {
                 if (Bas)
                 {
-                    fee = 136 * 5.00; //per week
+                    fee = 96
+                        * 5.00; //per week
                 }
                 else if (Reg)
                 {
-                    fee = 136 * 10.00;  // per week
+                    fee = 96 * 10.00;  // per week
                 }
                 else
                 {
-                    fee = 136 * 15.00;
+                    fee = 96 * 15.00;
                 }
                 
             }

@@ -7,16 +7,76 @@ using System.Threading.Tasks;
 
 namespace Week8demo
 {
-    public class Extra()
+    public class Extraslogic()
     {
-       public static double  extralogic(bool Twentyfour, bool Personal, bool Diet, bool ON, double fee)
+       public static double  extralogic(bool Twentyfour, bool Personal, bool Diet, bool ON, double fee, bool ThreeMonth, bool TwelveMonth)
         {
             double Ex = 0;
 
-            if (Twentyfour) Ex =fee + 1;
-            else if (Personal) Ex = fee + 20;
-            else if (Diet)Ex = fee + 20; 
-            else if (ON) Ex = fee + 2;
+            if (Twentyfour)
+            {
+                if (ThreeMonth)
+                {
+                    Ex = 12 * 1.00;
+                }
+                else if (TwelveMonth)
+                {
+                    Ex = 48 * 1.00;
+                }
+                else
+                {
+                    Ex = 96 * 1.00;
+                }
+               
+            }
+            else if (Personal)
+            {
+                if (ThreeMonth)
+                {
+                    Ex = 12 * 20.00;
+                }
+                else if (TwelveMonth)
+                {
+                    Ex = 48 * 20.00;
+                }
+                else
+                {
+                    Ex = 96 * 20.00;
+                }
+            }
+            else if (Diet)
+            {
+                if (ThreeMonth)
+                {
+                    Ex = 12 * 20.00;
+                }
+                else if (TwelveMonth)
+                {
+                    Ex = 48 * 20.00;
+                }
+                else
+                {
+                    Ex = 96 * 20.00;
+                }
+            }
+
+
+
+            else if (ON)
+            { 
+                if (ThreeMonth)
+                {
+                    Ex = 12 * 2.00;
+                }
+                else if (TwelveMonth)
+                {
+                    Ex = 48 * 2.00;
+                }
+                else
+                {
+                    Ex = 96 * 2.00;
+                }
+            }
             else
             {
                 Ex = 0;
